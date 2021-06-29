@@ -12,3 +12,4 @@ struct PersonalData {
     var password: String
     
 }
+
