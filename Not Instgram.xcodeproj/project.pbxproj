@@ -11,6 +11,7 @@
 		FFF59575268ABE5D0003AF3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF59574268ABE5D0003AF3B /* ContentView.swift */; };
 		FFF59577268ABE5F0003AF3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF59576268ABE5F0003AF3B /* Assets.xcassets */; };
 		FFF5957A268ABE5F0003AF3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF59579268ABE5F0003AF3B /* Preview Assets.xcassets */; };
+		FFF59582268AC72C0003AF3B /* PersonalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF59581268AC72C0003AF3B /* PersonalData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FFF59576268ABE5F0003AF3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF59579268ABE5F0003AF3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFF5957B268ABE5F0003AF3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF59581268AC72C0003AF3B /* PersonalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				FFF59572268ABE5D0003AF3B /* Not_InstgramApp.swift */,
 				FFF59574268ABE5D0003AF3B /* ContentView.swift */,
+				FFF59581268AC72C0003AF3B /* PersonalData.swift */,
 				FFF59576268ABE5F0003AF3B /* Assets.xcassets */,
 				FFF5957B268ABE5F0003AF3B /* Info.plist */,
 				FFF59578268ABE5F0003AF3B /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				FFF59575268ABE5D0003AF3B /* ContentView.swift in Sources */,
 				FFF59573268ABE5D0003AF3B /* Not_InstgramApp.swift in Sources */,
+				FFF59582268AC72C0003AF3B /* PersonalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
