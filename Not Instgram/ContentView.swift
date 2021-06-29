@@ -54,7 +54,7 @@ struct ContentView: View {
                     .offset(x: -15, y: 0)
                     
                     Button("Create New Account") {
-                            
+                        isCreateSheetPresented = true
                     }
                     .foregroundColor(.black)
                 }
@@ -73,7 +73,7 @@ struct ContentView: View {
             .padding()
         }
         .sheet(isPresented: $isCreateSheetPresented) {
-            
+            CreateAccountView()
         }
         
     }
