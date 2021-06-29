@@ -26,10 +26,10 @@ struct CreateAccountView: View {
                 .font(Font.system(size: 30))
                 .padding()
                 .frame(alignment: .leading)
-                .offset(x: -120, y: -220)
+                .offset(x: -120, y: -200)
             
             Text("Please enter your username and password here to create your account.")
-                .offset(x: 0, y: -240)
+                .offset(x: 0, y: -220)
                 .padding()
                 .font(Font.system(size: 15))
             
@@ -57,6 +57,15 @@ struct CreateAccountView: View {
                 .cornerRadius(5)
                 .offset(x: 0, y: 30)
             
+                Button("Create") {
+                    
+                }
+                .padding()
+                .background(Color.red)
+                .foregroundColor(.black)
+                .cornerRadius(5)
+                .frame(width: 250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .offset(x: 120, y: 40)
             }
             .padding()
         }
