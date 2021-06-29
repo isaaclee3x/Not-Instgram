@@ -10,4 +10,5 @@ import Foundation
 struct PersonalData {
     var username: String
     var password: String
+    
 }
