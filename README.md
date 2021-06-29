@@ -1,11 +1,11 @@
 # Not-Instgram
 
-##WELCOME <br/>
+## WELCOME <br/>
 <br/>
 This is where I try to rip off <b> Instagram </b> by creating a fake one. <br/>
 <br/>
 
-###Some guidlines here: <br/>
+### Some guidlines here: <br/>
 <br/>
 <b>V</b> -> Verification View <br/>
 <b>C</b> -> Create New User View <br/>
