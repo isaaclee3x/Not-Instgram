@@ -20,6 +20,8 @@ struct ContentView: View {
     @State private var username = ""
     @State private var password = ""
     
+    @State private var isCreateSheetPresented = false
+    
     var body: some View {
         VStack {
             Rectangle()
@@ -70,8 +72,9 @@ struct ContentView: View {
             .offset(x: 35, y: -300)
             .padding()
         }
-        
-        
+        .sheet(isPresented: $isCreateSheetPresented) {
+            
+        }
         
     }
 }

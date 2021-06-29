@@ -13,12 +13,15 @@ struct CreateAccountView: View {
     @State private var password = ""
     @State private var confirmPassword = ""
     
-    @State private var numberPeopleSignedIn = 0
     @State private var userID = 0
     
+    @State private var isAlertPresented = false
+    
+    @State private var saveAccount = false
+    
+    @State var arrayOfPeople = []
     var body: some View {
         
-        var arrayOfPeople = PersonalData(username: "", password: "")
         
         VStack {
             Text("Account")
@@ -43,22 +46,23 @@ struct CreateAccountView: View {
                     .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .cornerRadius(5)
                     .offset(x: 0, y: -30)
-            
-            SecureField("  Password", text: $password)
-                .padding()
-                .background(Color.gray)
-                .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .cornerRadius(5)
-            
-            SecureField("  Confirm Password", text: $confirmPassword)
-                .padding()
-                .background(Color.gray)
-                .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .cornerRadius(5)
-                .offset(x: 0, y: 30)
-            
+                
+                SecureField("  Password", text: $password)
+                    .padding()
+                    .background(Color.gray)
+                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .cornerRadius(5)
+                
+                SecureField("  Confirm Password", text: $confirmPassword)
+                    .padding()
+                    .background(Color.gray)
+                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .cornerRadius(5)
+                    .offset(x: 0, y: 30)
+                
                 Button("Create") {
-                    
+                    arrayOfPeople.append(PersonalData(username: username, password: password))
+                    print(arrayOfPeople)
                 }
                 .padding()
                 .background(Color.red)
@@ -66,14 +70,16 @@ struct CreateAccountView: View {
                 .cornerRadius(5)
                 .frame(width: 250, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .offset(x: 120, y: 40)
+                
             }
             .padding()
         }
     }
-    
-    struct CreateAccountView_Previews: PreviewProvider {
-        static var previews: some View {
-            CreateAccountView()
-        }
+}
+
+struct CreateAccountView_Previews: PreviewProvider {
+    static var previews: some View {
+        CreateAccountView()
     }
 }
+
